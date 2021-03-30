@@ -1,4 +1,4 @@
-package io.lhdev.HouseBrew.Item;
+package io.lhdev.HouseBrew.item;
 
 public class Item {
     private Long id;
@@ -87,3 +87,4 @@ public class Item {
                 '}';
     }
 }
+
