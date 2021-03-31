@@ -18,4 +18,8 @@ public class ItemService {
     public List<Item> getItems(){
         return itemRepository.findAll();
     }
+
+    public void addNewItem(Item item) {
+        System.out.println(item);
+    }
 }
