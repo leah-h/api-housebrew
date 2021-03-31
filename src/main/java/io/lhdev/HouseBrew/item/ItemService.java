@@ -4,6 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Optional;
 
 @Service
 public class ItemService {
@@ -20,6 +21,10 @@ public class ItemService {
     }
 
     public void addNewItem(Item item) {
-        System.out.println(item);
+        Optional<Item> itemOptional = itemRepository.findItemByName(item.getName());
+        if (itemOptional.isPresent()){
+            throw new IllegalStateException("name already exists");
+        }
+        itemRepository.save(item);
     }
 }
