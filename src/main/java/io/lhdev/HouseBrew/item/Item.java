@@ -15,17 +15,17 @@ public class Item {
            strategy = GenerationType.SEQUENCE,
             generator = "item_sequence"
     )
-    private Long id;
+    private long id;
     private String name;
     private String description;
     private String imageUrl;
-    private int size;
-    private float price;
+    private Integer size;
+    private Integer price;
 
     public Item() {
     }
 
-    public Item(Long id, String name, String description, String imageUrl, int size, float price) {
+    public Item(long id, String name, String description, String imageUrl, Integer size, Integer price) {
         this.id = id;
         this.name = name;
         this.description = description;
@@ -34,7 +34,7 @@ public class Item {
         this.price = price;
     }
 
-    public Item(String name, String description, String imageUrl, int size, float price) {
+    public Item(String name, String description, String imageUrl, Integer size, Integer price) {
         this.name = name;
         this.description = description;
         this.imageUrl = imageUrl;
@@ -42,11 +42,11 @@ public class Item {
         this.price = price;
     }
 
-    public Long getId() {
+    public long getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(long id) {
         this.id = id;
     }
 
@@ -78,15 +78,15 @@ public class Item {
         return size;
     }
 
-    public void setSize(int size) {
+    public void setSize(Integer size) {
         this.size = size;
     }
 
-    public float getPrice() {
+    public double getPrice() {
         return price;
     }
 
-    public void setPrice(float price) {
+    public void setPrice(Integer price) {
         this.price = price;
     }
 
