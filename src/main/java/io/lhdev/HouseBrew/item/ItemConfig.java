@@ -20,7 +20,7 @@ public class ItemConfig {
                             "from Uganda, Papua New Guinea, and Sumatra, is downright viscous in the cup.",
                     "https://images.unsplash.com/photo-1550681560-af9bc1cb339e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80",
                     12,
-                    1000
+                    10.00
             );
 
             Item hayes = new Item(
@@ -30,7 +30,7 @@ public class ItemConfig {
                             "shot with a voluptuous tawny crema and a somewhat dangerous-looking viscosity.",
                     "https://images.unsplash.com/photo-1520516472218-ed48f8ff3271?ixlib=rb-1.2.1&auto=format&fit=crop&w=668&q=80",
                     12,
-                    1750
+                    17.50
             );
 
             repository.saveAll(

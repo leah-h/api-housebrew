@@ -20,12 +20,12 @@ public class Item {
     private String description;
     private String imageUrl;
     private Integer size;
-    private Integer price;
+    private double price;
 
     public Item() {
     }
 
-    public Item(long id, String name, String description, String imageUrl, Integer size, Integer price) {
+    public Item(long id, String name, String description, String imageUrl, Integer size, double price) {
         this.id = id;
         this.name = name;
         this.description = description;
@@ -34,7 +34,7 @@ public class Item {
         this.price = price;
     }
 
-    public Item(String name, String description, String imageUrl, Integer size, Integer price) {
+    public Item(String name, String description, String imageUrl, Integer size, double price) {
         this.name = name;
         this.description = description;
         this.imageUrl = imageUrl;
@@ -86,7 +86,7 @@ public class Item {
         return price;
     }
 
-    public void setPrice(Integer price) {
+    public void setPrice(double price) {
         this.price = price;
     }
 
